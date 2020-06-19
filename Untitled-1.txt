@@ -1,0 +1,24 @@
+//COMANDO DE GIT HUB//
+
+git clone http:// ( comando para clonar)
+git init
+
+echo "# project-git-elisson" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/elissonnovais/project-git-elisson.git
+git push -u origin master
+                
+                …or push an existing repository from the command line
+git remote add origin https://github.com/elissonnovais/project-git-elisson.git
+git push -u origin master
+
+<a href="mailto:contato@empresa.com">contato@empresa.com</a>
+direciona direto para a caixa de email
+
+<a href="tel:9999999999">9999999999</a>
+direciona para a discagemn de numero
+
+-************************************************
+Você possui um site com links externos patrocinados. Quando o usuário clicar em algum deles deverá abrir uma nova aba, qual das alternativas abaixo apresenta a melhor solução?

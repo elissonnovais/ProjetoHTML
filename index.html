@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 
 
@@ -8,17 +9,15 @@
     <title>MainPage</title>
     
 
-    <link href="/ProjetoHTML/EfeitoPage.css" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <script type="text/javascript " src="/ProjetoHTML/JavaS/javaindexscript.js"></script>
-</head>
-
-<body>
+<link src="/ProjetoHTML/EfeitoPage.css" type="text/css">
     
 
 
 
+    
+</head>
+
+<body>
 
 <nav>
     <p>PageInicial</p>
@@ -38,17 +37,17 @@
 
 </nav>
 
-
 <header>
-   <p> Sou um desenvolvendor web e busco sempre conhecimento 
-       para desenvolver sites para empresas
-       
-    </p>
+  
 
 </header>
 
 <section id="home">
    <center> <h2>home</h2>
+     <p> Sou um desenvolvendor web e busco sempre conhecimento 
+       para desenvolver sites para empresas
+       
+    </p>
     exelente rendimento com sites dinamicos atravez de linguagem web
     <div><br><img src="img/code_computer.jpg" width="300px"></center></br></div>
     </center>
@@ -63,6 +62,41 @@
     </center>
 </section>
 
+<center>
+<h2>Demonstração com javascript</h2>
+    <p>um estudante de sistema de informação, formado em tecnico de informatica, 
+        desde 2016 busco conhecimento com desenvolvimento web</p> 
+        <canvas id="snake" width="512" height="512"></canvas>
+        
+    </center>
+
+
+<script>
+    
+    let canvas = document.getElementById("snake");
+    let context = canvas.getContext("2d");
+    let box = 32;
+    let snake = [];
+    snake[0] = {
+        x: 8 * box,
+        y: 8 * box
+    }
+    
+    function criarBG(){
+        context.fillStyle = "lightgreen";
+        context.fillRect(0, 0, 16 * box, 16 * box);
+    }
+    
+    function criarCobrinha(){
+        for(i=0; i<snake.length; i++){
+            context.fillStyle ="verde";
+            context.fillRect(snake[i].x, snake[i].y, box, box);
+        }
+    }
+    
+    criarBG();
+    </script>
+
 <section id="Objetivo">
     <center>
     <h2>Objetivo academico</h2>
@@ -76,19 +110,9 @@
     </center>
 </section>
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
 <footer>
     <p><center><red>site desenvolvido</red></p></center>
 </footer>
-
-
 </html>
-
-
-
-
-
